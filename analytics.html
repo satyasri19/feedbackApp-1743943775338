@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold">Class Analytics</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-xl font-semibold mb-4">Performance Overview</h2>
+                <canvas id="performanceChart"></canvas>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-xl font-semibold mb-4">Feedback Categories</h2>
+                <canvas id="feedbackChart"></canvas>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-xl font-semibold mb-4">Improvement Trends</h2>
+                <canvas id="improvementChart"></canvas>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-xl font-semibold mb-4">Common Issues</h2>
+                <canvas id="issuesChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
