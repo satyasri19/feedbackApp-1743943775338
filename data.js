@@ -75,9 +75,11 @@ const DataManager = {
         // Implementation for finding common feedback issues
         const issues = {};
         feedbacks.forEach(f => {
-            f.issues.forEach(issue => {
-                issues[issue] = (issues[issue] || 0) + 1;
-            });
+            if (f.areasForImprovement) {
+                f.areasForImprovement.forEach(issue => {
+                    issues[issue] = (issues[issue] || 0) + 1;
+                });
+            }
         });
         return Object.entries(issues)
             .sort((a, b) => b[1] - a[1])
