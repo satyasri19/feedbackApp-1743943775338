@@ -1,0 +1,54 @@
+/* Custom styles to supplement Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Student card styling */
+.student-card {
+    transition: all 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback card styling */
+.feedback-card {
+    border-left: 4px solid #4A90E2;
+}
+
+.feedback-card.positive {
+    border-left-color: #10B981;
+}
+
+.feedback-card.needs-work {
+    border-left-color: #F59E0B;
+}
+
+/* Chart container styling */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+/* Form input styling */
+.form-input {
+    transition: border-color 0.2s ease;
+}
+
+.form-input:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Animation for feedback cards */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.feedback-card {
+    animation: fadeIn 0.3s ease-out forwards;
+}
