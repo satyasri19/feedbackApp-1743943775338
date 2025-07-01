@@ -1,9 +1,4 @@
 
-Built by https://www.blackbox.ai
-
----
-
-```markdown
 # Teacher Feedback Assistant
 
 ## Project Overview
