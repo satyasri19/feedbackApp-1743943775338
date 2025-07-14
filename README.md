@@ -1,4 +1,3 @@
-
 # Teacher Feedback Assistant
 
 ## Project Overview
@@ -62,7 +61,3 @@ The project contains the following main files and directories:
 
 ## Contributing
 Contributions are welcome! If you would like to contribute to the project, please fork the repository and submit a pull request with your changes.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
